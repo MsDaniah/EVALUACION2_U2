@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Fomulario" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+                <a class="navbar-brand" href="https://cftestatalaricayparinacota.cl">
+                    <img src="./assets/img/logo_cft_estatal.jpeg" class="sizelogo">
+                </a>
+            <h1 style="margin: 0 auto;">Calculadora de Notas</h1>
+        </div>
+    </nav>
+        <br><div class="formprincipal">
+            <form id="form" class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo."
+                        required pattern="[A-Za-z]"></input>
+                </div>      
+                <div class="col-12">
+                    <input type="text" class="form-control" id="asignatura"
+                        placeholder="Escribe el nombre de la Asignatura." required pattern="[A-Za-z]"></input>
+                </div>
+                <!--Formulario y calculadora 1° Unidad-->
+                <div class="col-12">
+                    <label for="unid1" class="form-label">Nombre de la 1° Unidad</label>
+                    <input type="text" class="form-control" id="unid1" placeholder="Características de un sitio Web." value="Características de un sitio Web." required pattern="[A-Za-z]"></input>
+                </div>
+                <div class="col-6">
+                    <label for="n1" class="form-label">1° Nota</label>
+                    <input id="n1" step=0.1 type="number" class="form-control" placeholder="Ingresa tu primera nota." min="1"
+                        max="7"><br>
+                    <input id="pond1" type="number" class="form-control" value="12" min="1" max="100">
+                </div>
+                <div class="col-6">
+                    <label for="n2" class="form-label">2° Nota</label>
+                    <input id="n2" step=0.1 type="number" class="form-control" placeholder="Ingresa tu segunda nota." min="1"
+                        max="7"><br>
+                    <input id="pond2" type="number" class="form-control" value="21" min="1" max="100">
+                </div>              
+                <!--Formulario y calculadora 2° Unidad-->
+                <div class="col-12">
+                    <label for="unid2" class="form-label">Nombre de la 2° Unidad</label>
+                    <input type="text" class="form-control" id="unid2" placeholder="Programación básica de una Aplicación Web." value="Programación básica de una Aplicación Web." required pattern="[A-Za-z]"></input>
+                </div>
+                <div class="col-6">
+                    <label for="n3" class="form-label">3° Nota</label>
+                    <input id="n3" step=0.1 type="number" class="form-control" placeholder="Ingresa tu tercera nota." min="1"
+                        max="7"><br>
+                    <input id="pond3" type="number" class="form-control" value="12" min="1" max="100">
+                </div>
+                <div class="col-6">
+                    <label for="n4" class="form-label">4° Nota</label>
+                    <input id="n4" step=0.1 type="number" class="form-control" placeholder="Ingresa tu cuarta nota." min="1"
+                        max="7"><br>
+                    <input id="pond4" type="number" class="form-control" value="21" min="1" max="100">
+                </div>
+                <!--Formulario y calculadora 3° Unidad-->
+                <div class="col-12">
+                    <label for="unid3" class="form-label">Nombre de la 3° Unidad</label>
+                    <input type="text" class="form-control" id="unid3" placeholder="Programación Avanzada de una aplicación Web." value="Programación Avanzada de una aplicación Web." required pattern="[A-Za-z]"></input>
+                </div>
+                <div class="col-6">
+                    <label for="n5" class="form-label">5° Nota</label>
+                    <input id="n5" step=0.1 type="number" class="form-control" placeholder="Ingresa tu quinta nota." min="1"
+                        max="7"><br>
+                    <input id="pond5" type="number" class="form-control" value="13" min="1" max="100">
+                </div>
+                <div class="col-6">
+                    <label for="n6" class="form-label">6° Nota</label>
+                    <input id="n6" step=0.1 type="number" class="form-control" placeholder="Ingresa tu sexta nota." min="1"
+                        max="7"><br>
+                    <input id="pond6" type="number" class="form-control" value="21" min="1" max="100">
+                </div>
+                <a onclick="sumar()" class="b">Enviar</a>
+            </form>
+        </div>
+    <script src="./assets/js/script_index.js"></script>
+
+</body>
+</html>

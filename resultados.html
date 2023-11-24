@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Fomulario" content="width=device-width, initial-scale=1.0">
+    <title> Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+                <a class="navbar-brand" href="https://cftestatalaricayparinacota.cl">
+                    <img src="./assets/img/logo_cft_estatal.jpeg" class="sizelogo">
+                </a>
+            <h1 style="margin: 0 auto;">Calculadora de Notas</h1>
+        </div>
+    </nav>    
+
+        <p>Nombre Estudiante: <span id="nombre"></span></p>
+        <p>Asignatura: <span id="asignatura"></span></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">N° Unidad</th>
+                <th scope="col">Nombre Unidad</th>
+                <th scope="col">1° Nota</th>
+                <th scope="col">2° Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><span id="unid1"></span></td>
+                <td><span id="n1"></span></td>
+                <td><span id="n2"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><span id="unid2"></span></td>
+                <td><span id="n3"></span></td>
+                <td><span id="n4"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><span id="unid3"></span></td>
+                <td><span id="n5"></span></td>
+                <td><span id="n6"></span></td>
+            </tr>
+    
+        </tbody>
+    </table>
+    <p>Tu promedio final es de <span id="promedio"></span></p>
+    <p><span id="mensaje"></span></p>
+
+    <script src="./assets/js/script_resultados.js"></script>
+
+</body>
+</html>
